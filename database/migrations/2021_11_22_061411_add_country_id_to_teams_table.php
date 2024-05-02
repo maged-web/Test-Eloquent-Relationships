@@ -27,6 +27,7 @@ class AddCountryIdToTeamsTable extends Migration
     {
         Schema::table('teams', function (Blueprint $table) {
             //
+            
         });
     }
 }

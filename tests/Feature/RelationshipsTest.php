@@ -43,7 +43,7 @@ class RelationshipsTest extends TestCase
     {
         $user = User::factory()->create();
         $task = Task::create([
-            'users_id' => $user->id,
+            'user_id' => $user->id,
             'name' => 'Some task'
         ]);
         Comment::create([
