@@ -11,9 +11,10 @@ class ProjectController extends Controller
     {
         // TASK: Add one sentence to save the project to the logged-in user
         //   by $request->project_id and with $request->start_date parameter
-        $user=auth()->user();
+        $user =auth()->user();
         $project=Project::findOrFail($request->project_id);
         $user->projects()->attach($project,['start_date'=>$request->start_date]);
+
         return 'Success';
     }
 }
